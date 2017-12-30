@@ -24,7 +24,7 @@ $(document).ready(function() {
 
 	// Reset function
 	function reset(){
-		Random=Math.floor(Math.random()*101+19);
+		Random = Math.floor(Math.random()*101+19);
 		console.log(Random)
 		$('#randomNumb').text(Random);
 		num1 = Math.floor(Math.random()*11+1);
@@ -59,9 +59,51 @@ $(document).ready(function() {
 	//Console log the new total
 	//Update the totalScore text
 	//Set win/lose alerts
-	$('#gemOne').on("click", function(){
+	$('#gemOne').on("click", function() {
 		yourScore = yourScore + num1;
 		console.log("User score: " + yourScore);
-		
-	}
-})
+		$('#totalScore').text(yourScore);
+		if (yourScore === Random) {
+			youWin();
+		}
+		else if (yourScore > Random) {
+			youLose();
+		}
+	});
+
+	$('#gemTwo').on("click", function() {
+		yourScore = yourScore + num2;
+		console.log("User score: " + yourScore);
+		$('#totalScore').text(yourScore);
+		if (yourScore === Random) {
+			youWin();
+		}
+		else if (yourScore > Random) {
+			youLose();
+		}
+	});
+
+	$('#gemThree').on("click", function() {
+		yourScore = yourScore + num3;
+		console.log("User score: " + yourScore);
+		$('#totalScore').text(yourScore);
+		if (yourScore === Random) {
+			youWin();
+		}
+		else if (yourScore > Random) {
+			youLose();
+		}
+	});
+
+	$('#gemFour').on("click", function() {
+		yourScore = yourScore + num4;
+		console.log("User score: " + yourScore);
+		$('#totalScore').text(yourScore);
+		if (yourScore === Random) {
+			youWin();
+		}
+		else if (yourScore > Random) {
+			youLose();
+		}
+	});
+});
