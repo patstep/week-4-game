@@ -6,52 +6,55 @@
 
 	<meta charset="utf-8">
 	<title> Crystal Collector game</title>
-	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
 </head>
 
 <body>
 
+
 	<div class="gameHeader">
 		<h1>Crystal Collector</h1>
 	</div>
 
 	<div class="gameInfo">
-		<h3>You will be given a random number at the start of each game.
+		<h4>You will be given a random number at the start of each game.
 			<p>
 			Clicking each of the four crystals will add a certain number of points to your total.  The values of the crystals will randomly change with each game.
 			<p>
 			Win the game by matching your total score to the random number.  If your total score exceeds the random number, you will lose!
-		</h3>
+		</h4>
 	</div>
 
-	<div id="randomNumb">
-
+	<div>
+	Match this number:
+	<p>
+	<span id="randomNumb"></span>
 	</div>
 
 	<div id="winLoss">
-		<h2>
+		<h3>
 		Wins:
 			<span id="winNumb"></span>
 		<br/>
 		Losses:
 			<span id="lossNumb"></span>
-		</h2>
+		</h3>
 	</div>
 
 	<div id="crystals">
-		<img src="assets/images/blueGem.png" class="crystalImg">
-		<img src="assets/images/yellowGem.png" class="crystalImg">
-		<img src="assets/images/rubyGem.png" class="crystalImg">
-		<img src="assets/images/purpleGem.png" class="crystalImg">
+		<img src="assets/images/blueGem.png" class="crystalImg" id="gemOne">
+		<img src="assets/images/yellowGem.png" class="crystalImg" id="gemTwo">
+		<img src="assets/images/rubyGem.png" class="crystalImg" id="gemThree">
+		<img src="assets/images/purpleGem.png" class="crystalImg" id="gemFour">
 	</div>
 
-	<div id="totalScore">
+	<div id="yourScore">
 		<h2>Your total so far:
-			<span id="yourScore"></span>
+			<span id="totalScore"></span>
 		</h2>
 	</div>
+
 
 	<script
   src="http://code.jquery.com/jquery-3.2.1.min.js"
@@ -61,6 +64,5 @@
 
 </body>
 
-</body>
 
 </html>

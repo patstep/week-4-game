@@ -1,6 +1,24 @@
+body {
+	background-image: url("../images/gembg.png")
+}
 
+div {
+	background-color: #FCFCFCFF;
+	margin: 10px;
+	padding: 10px;
+}
 
 .crystalImg {
-	height: 150px;
-	width: 150px;
+	height: 120px;
+	width: 120px;
+}
+
+#randomNumb {
+	font-size: 60px;
+	color: #2869D6FF;
+}
+
+#totalScore {
+	font-size: 60px;
+	#9F44BAFF
 }
